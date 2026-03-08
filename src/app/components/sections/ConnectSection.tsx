@@ -40,7 +40,7 @@ export function ConnectSection() {
             whileTap={{ scale: 0.95 }}
           >
             <Github className="w-5 h-5" />
-            <span>github.com/yourusername</span>
+            <span>github.com/Reta-G</span>
           </motion.a>
           
           <motion.a
@@ -52,7 +52,7 @@ export function ConnectSection() {
             whileTap={{ scale: 0.95 }}
           >
             <Linkedin className="w-5 h-5" />
-            <span>linkedin.com/in/yourusername</span>
+            <span>linkedin.com/in/vetra-g </span>
           </motion.a>
           
           <motion.a
@@ -62,7 +62,7 @@ export function ConnectSection() {
             whileTap={{ scale: 0.95 }}
           >
             <Mail className="w-5 h-5" />
-            <span>your.email@example.com</span>
+            <span>gechbanti@gmail.com</span>
           </motion.a>
         </div>
 
