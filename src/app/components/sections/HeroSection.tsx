@@ -28,7 +28,7 @@ export function HeroSection() {
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-[#E07A5F]/20 to-[#E07A5F]/10 border-4 border-white shadow-lg flex items-center justify-center overflow-hidden">
               <div className="text-center text-slate-600">
                 <div className="w-24 h-24 mx-auto mb-2 rounded-full bg-[#E2E8F0]"></div>
-                <span className="text-xs">Your Photo</span>
+                <span className="text-xs">My Photo</span>
               </div>
             </div>
           </motion.div>
@@ -41,7 +41,7 @@ export function HeroSection() {
               animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
               transition={{ duration: 0.4, delay: 0.2 }}
             >
-              Reta Getachew  {/* FIXED: Added your name */}
+              Reta Getachew 
             </motion.h1>
             
             <motion.p 
