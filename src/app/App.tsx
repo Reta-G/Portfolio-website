@@ -1,3 +1,4 @@
+// App.tsx
 import { Header } from './components/sections/Header';
 import { HeroSection } from './components/sections/HeroSection';
 import { VideoSection } from './components/sections/VideoSection';
