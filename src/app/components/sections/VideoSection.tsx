@@ -15,14 +15,14 @@ export function VideoSection() {
         transition={{ duration: 0.4 }}
       >
         <h2 className="text-center mb-4 text-4xl font-semibold text-slate-900">
-          Hello, I'm [Name] — In My Own Words
+          Hello, I'm Reta — In My Own Words  {/* FIXED: Added name */}
         </h2>
         <p className="text-center mb-12 text-lg text-slate-600">
           A personal introduction to who I am and what drives me
         </p>
 
         {/* Video Placeholder */}
-        <div className="relative aspect-video bg-linear-to-br from-[#E07A5F] to-[#B65F48] rounded-2xl shadow-xl overflow-hidden group cursor-pointer">
+        <div className="relative aspect-video bg-gradient-to-br from-[#E07A5F] to-[#B65F48] rounded-2xl shadow-xl overflow-hidden group cursor-pointer">
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
           
