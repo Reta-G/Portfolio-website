@@ -20,24 +20,41 @@ export function PerspectiveSection() {
       >
         <h2 className="mb-12 text-center">
           <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#F5FBE6] via-[#FE7F2D] to-[#F5FBE6] bg-clip-text text-transparent">
-            What Drives Me
+            The Way I See It
           </span>
         </h2>
         
-        <div className="bg-[#F5FBE6]/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-[#F5FBE6]/20">
-          <p className="mb-6 text-lg leading-relaxed italic text-[#F5FBE6]/90">
-            "Technology should serve people, not the other way around. I believe the most powerful software 
-            is built when you deeply understand the problem you're solving—not just the technical requirements, 
-            but the human context around it."
+        <div className="bg-[#F5FBE6]/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-[#F5FBE6]/20 space-y-6">
+          <p className="text-lg leading-relaxed">
+            <span className="text-2xl font-bold text-[#FE7F2D]">"Why?"</span> before 
+            <span className="text-2xl font-bold text-[#FE7F2D]"> "How?"</span> that's my mantra.
           </p>
           
-          <p className="text-lg leading-relaxed text-[#F5FBE6]/80">
-            I'm particularly interested in accessible, intuitive interfaces and systems that reduce cognitive 
-            load. Whether it's a developer tool that makes debugging less painful or an application that helps 
-            non-technical users feel empowered, I want to build software that respects people's time and 
-            mental energy. In a world of increasing complexity, I believe simplicity and clarity are radical 
-            acts of design.
+          <p className="text-lg leading-relaxed">
+            The best software comes from understanding the person on the other side 
+            of the screen. From asking: <span className="italic text-[#FE7F2D]">"Does this actually make their life better?"</span>
           </p>
+          
+          <p className="text-lg leading-relaxed bg-[#233D4D]/50 p-6 rounded-xl">
+            I've noticed something about the e-commerce platforms we use in Ethiopia. They're copy-pasted 
+            from giant global companies. <span className="font-bold">They weren't built for us.</span> 
+             And that? That's not a complaint that's an opportunity.
+          </p>
+          
+          <p className="text-lg leading-relaxed">
+            I'm working on changing that. Building something that actually fits how Ethiopians think, 
+            trust, and transact. Because technology should feel like it belongs to you not like you're 
+            borrowing it from someone else.
+          </p>
+          
+          <div className="border-t border-[#F5FBE6]/20 pt-6 mt-4">
+            <p className="text-xl font-bold text-center">
+              People don't forget their first time.
+            </p>
+            <p className="text-center mt-2">
+              If you wanna be my unforgettable client - <span className="text-[#FE7F2D] font-bold">be the first.</span>
+            </p>
+          </div>
         </div>
       </motion.div>
     </section>

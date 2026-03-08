@@ -68,7 +68,7 @@ export function ConnectSection() {
 
         <div className="pt-8 text-center border-t border-[#F5FBE6]/20">
           <p className="text-sm text-[#F5FBE6]/60">
-            © {new Date().getFullYear()} Your Name. Built with React and Tailwind CSS.
+            © {new Date().getFullYear()} Reta Getachew. Built with React and Tailwind CSS.
           </p>
           <p className="text-xs mt-2 text-[#F5FBE6]/40">
             Designed to showcase potential, not just projects.

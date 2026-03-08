@@ -1,4 +1,4 @@
-import { Target, Users, Lightbulb } from 'lucide-react'
+import { Target, Users, Lightbulb, Rocket, HeartHandshake } from 'lucide-react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -9,18 +9,18 @@ export function FutureSection() {
   const cards = [
     {
       icon: Target,
-      title: "Role I Seek",
-      description: "A position where I can contribute to meaningful products while learning from experienced engineers"
+      title: "The Role I Want",
+      description: "A place where I can contribute to meaningful projects and learn from engineers who've been in the trenches. I'm looking for a launchpad."
     },
     {
-      icon: Lightbulb,
-      title: "Problems I Want to Solve",
-      description: "Challenges that require both technical depth and empathy for the end user"
+      icon: Rocket,
+      title: "The Problem I'm Solving",
+      description: "Ethiopian e-commerce is broken. We're using platforms designed for Amazon, not for us. I'm building something that actually fits how Ethiopians shop, trust, and connect."
     },
     {
-      icon: Users,
-      title: "Impact I Hope to Make",
-      description: "Building tools that genuinely improve people's daily lives and work"
+      icon: HeartHandshake,
+      title: "The Impact I'll Make",
+      description: "I want to be your unforgettable first. The person you remember because we built something real together. I care deeply, and people don't forget that."
     }
   ]
 
@@ -70,10 +70,17 @@ export function FutureSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <p className="text-center text-lg leading-relaxed text-[#233D4D]">
-            I'm looking for a team that values thoughtful engineering, continuous learning, and building 
-            products that matter. I want to work alongside people who care about craft, ask good questions, 
-            and believe that technology can be a force for good. If you're building something meaningful 
-            and need someone who brings curiosity, dedication, and a user-first mindset, let's talk.
+            I'm looking for a team that values <span className="font-bold text-[#FE7F2D]">thoughtful engineering</span>, 
+            <span className="font-bold text-[#FE7F2D]"> continuous learning</span>, and 
+            <span className="font-bold text-[#FE7F2D]"> building products that actually matter</span>.
+          </p>
+          <p className="text-center text-lg leading-relaxed text-[#215E61] mt-4">
+            I want to work alongside people who ask good questions, care about the details, 
+            and believe that technology can be a force for good in Ethiopia and beyond.
+          </p>
+          <p className="text-center text-xl font-bold mt-6 text-[#233D4D]">
+            If you're building something meaningful 
+            <span className="block text-[#FE7F2D] mt-2">let's make history together.</span>
           </p>
         </motion.div>
       </motion.div>

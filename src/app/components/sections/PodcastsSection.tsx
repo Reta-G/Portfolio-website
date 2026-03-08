@@ -8,32 +8,32 @@ export function PodcastsSection() {
 
   const podcasts = [
     {
-      name: "Syntax",
-      hosts: "Wes Bos & Scott Tolinski",
-      focus: "Web development trends and best practices",
-      takeaway: "Staying current with the rapidly evolving web ecosystem while learning from developers who ship real products.",
-      videoId: "dQw4w9WgXcQ"
+      name: "Jack Neel Podcast",
+      hosts: "Jack Neel (with Andrew Tate)",
+      focus: "Deep conversations on culture, power structures, and personal philosophy",
+      takeaway: "A rare, unfiltered look at how controversial figures navigate fame, censorship, and the price of challenging narratives. Andrew Tate opens up about his legal battles, the Miami incident, and why he believes most people are exactly where they belong.",
+      videoId: "YjZaLqC9_z8"
     },
     {
       name: "The Changelog",
       hosts: "Adam Stacoviak & Jerod Santo",
       focus: "Open source and software development",
       takeaway: "Understanding the stories behind the tools I use daily and the importance of community-driven development.",
-      videoId: "dQw4w9WgXcQ"
+      videoId: "eUpeqKUDhnc"
     },
     {
-      name: "99% Invisible",
-      hosts: "Roman Mars",
-      focus: "Design and architecture",
-      takeaway: "The best design is invisible—a principle that applies as much to software as it does to buildings.",
-      videoId: "dQw4w9WgXcQ"
+      name: "Club Shay Shay",
+      hosts: "Shannon Sharpe",
+      focus: "In-depth conversations with cultural icons and influencers",
+      takeaway: "Understanding how the world's biggest content creators think, build, and navigate fame from Twitch records to dealing with Kanye, and from homeless shelters to streaming from space (ambition meets execution).",
+      videoId: "JYL0blfer6M"
     },
     {
-      name: "How I Built This",
-      hosts: "Guy Raz",
-      focus: "Entrepreneurship and innovation",
-      takeaway: "Building products is about solving problems for real people, not just writing clever code.",
-      videoId: "dQw4w9WgXcQ"
+      name: "Financially Incorrect",
+      hosts: "Barack",
+      focus: "Ethiopian entrepreneurship and business innovation",
+      takeaway: "How Dawit Abraham built Ethiopia's FIRST gaming startup from scratch navigating challenges, funding, and cultural barriers in a market that didn't exist yet. A blueprint for founders building in emerging markets.",
+      videoId: "IZd1t5PNN90"
     }
   ]
 

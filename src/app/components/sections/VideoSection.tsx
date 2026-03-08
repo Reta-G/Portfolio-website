@@ -16,7 +16,7 @@ export function VideoSection() {
       >
         <h2 className="text-center mb-4">
           <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
-            Hello, I'm Reta — In My Own Words
+            Hello, I'm Reta - In My Own Words
           </span>
         </h2>
         

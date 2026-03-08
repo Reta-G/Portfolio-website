@@ -15,30 +15,42 @@ export function AboutSection() {
       >
         <h2 className="mb-12 text-center">
           <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
-            How I Got Here
+            From Village to City
           </span>
         </h2>
         
         <div className="space-y-6 text-lg leading-relaxed">
           <p className="text-[#233D4D]">
-            My journey into computer science didn't start with code—it started with curiosity. I remember 
-            the exact moment: I was frustrated with a tedious manual task at my part-time job, and I thought, 
-            "There has to be a better way." That simple question led me down a rabbit hole of learning Python, 
-            automating workflows, and eventually discovering a deep fascination with how software can genuinely 
-            improve people's lives.
+            I'm a countryside guy who grew up in the villages of Ethiopia, and since 2019, I've been 
+            exploring the rhythm of Addis Ababa. Two worlds. One perspective. And honestly? 
+            <span className="font-bold text-[#FE7F2D]"> That contrast is my superpower.</span>
           </p>
           
+          <p className="text-[#215E61] bg-white/50 p-6 rounded-xl border-l-4 border-[#FE7F2D]">
+            My journey into tech didn't start in a classroom. It started with a simple question: 
+            <span className="italic"> "How can I make this easier?"</span> Whether it was automating 
+            something for my family or staying up all night figuring out how websites actually work, 
+            I've always been obsessed with building things that feel intuitive and helpful.
+          </p>
+          
+          <p className="text-[#233D4D]">
+            At university, I was known for my graphics design skills. Then one day, a university 
+            administrator asked: <span className="font-medium">"Can you help our PR team understand branding and design?"</span> 
+            I didn't just say yes I designed a complete graphics module, built my own team, handled 
+            all the finances, and trained them on Illustrator, Photoshop, After Effects, and Canva. 
+            <span className="block mt-2 font-bold text-[#FE7F2D]"> One week. From zero to heroes.</span>
+          </p>
+
           <p className="text-[#215E61]">
-            During my studies, I gravitated toward projects that solved real human problems. Whether it was 
-            building a study scheduler that understood student stress patterns or creating an accessibility 
-            tool for campus navigation, I learned that the best technology is invisible—it just works, and it 
-            makes life a little easier.
+            The president's office gave me a recognition certificate. But the real reward? 
+            Watching people light up when they create something for the first time. 
+            <span className="font-medium"> That moment taught me something powerful:</span> building 
+            teams and creating impact through others is actually more amazing than building alone.
           </p>
-          
-          <p className="text-[#233D4D] font-medium border-l-4 border-[#FE7F2D] pl-6 py-2 bg-white/50 rounded-r-lg">
-            What drives me isn't just the technical challenge—though I love that—it's the possibility of 
-            creating something that someone will use and think, "This makes sense." That's what brought me to 
-            computer science, and that's what keeps me learning every day.
+
+          <p className="text-[#233D4D] text-center italic border-t border-[#d9e3c0] pt-6">
+            My CS degree gave me the theory. The village gave me the work ethic. The city gave me the vision. 
+            And you? You might just be the next chapter.
           </p>
         </div>
       </motion.div>
