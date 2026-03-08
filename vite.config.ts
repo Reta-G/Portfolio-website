@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Portfolio-website/', 
+  base: '/Portfolio-website/',  // ← EXACTLY as your repo name (capital P, capital W)
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
