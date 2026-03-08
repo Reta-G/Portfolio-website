@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(),
+    tailwindcss(), // This handles Tailwind - no need for PostCSS
   ],
   base: '/Portfolio-website/',
   resolve: {
@@ -15,20 +15,13 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
-  server: {
-    port: 3000,
-    open: true,
-  },
   build: {
-    outDir: 'dist',
     sourcemap: true,
+    outDir: 'dist',
     minify: 'terser',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'framer-motion'],
-          ui: ['lucide-react', 'recharts'],
-        },
+    terserOptions: {
+      compress: {
+        drop_console: true,
       },
     },
   },

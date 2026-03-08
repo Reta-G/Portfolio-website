@@ -32,7 +32,7 @@ export function ConnectSection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
           <motion.a
-            href="https://github.com/yourusername"
+            href="https://github.com/Reta-G"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 w-full sm:w-auto justify-center bg-[#F5FBE6]/10 backdrop-blur-sm hover:bg-[#F5FBE6]/20 border border-[#F5FBE6]/20"
@@ -44,7 +44,7 @@ export function ConnectSection() {
           </motion.a>
           
           <motion.a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/vetra-g-6210143b6 "
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 w-full sm:w-auto justify-center bg-linear-to-r from-[#FE7F2D] to-[#FE9856] hover:from-[#e55f12] hover:to-[#FE7F2D]"
@@ -56,7 +56,7 @@ export function ConnectSection() {
           </motion.a>
           
           <motion.a
-            href="mailto:your.email@example.com"
+            href="mailto:gechbanti@gmail.com"
             className="group relative inline-flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 w-full sm:w-auto justify-center bg-[#F5FBE6]/10 backdrop-blur-sm hover:bg-[#F5FBE6]/20 border border-[#F5FBE6]/20"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

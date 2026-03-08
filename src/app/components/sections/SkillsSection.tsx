@@ -1,7 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Cell } from 'recharts'
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from '../ui/chart'
 
 export function SkillsSection() {
   const ref = useRef(null)
@@ -25,13 +24,6 @@ export function SkillsSection() {
 
   const colors = ['#233D4D', '#215E61', '#2d7a7e', '#FE7F2D', '#fe9856', '#e55f12']
 
-  const chartConfig = {
-    level: {
-      label: "Proficiency",
-      color: "#215E61",
-    },
-  }
-
   return (
     <section id="skills" ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-[#F5FBE6]">
       <motion.div 
@@ -47,22 +39,39 @@ export function SkillsSection() {
         </h2>
         
         <motion.div 
-          className="mb-16 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl"
+          className="mb-16 bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl overflow-hidden"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3 className="mb-6 text-xl font-bold text-center text-[#233D4D]">
+          <h3 className="mb-4 sm:mb-6 text-xl font-bold text-center text-[#233D4D]">
             Skill Proficiency
           </h3>
-          <div className="h-75 w-full">
-            <ChartContainer config={chartConfig}>
+          
+          {/* Fixed chart container with proper dimensions */}
+          <div className="w-full overflow-x-auto">
+            <div className="min-w-150 md:min-w-0 h-75">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={skillProficiency}>
+                <BarChart 
+                  data={skillProficiency}
+                  margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
+                >
                   <CartesianGrid strokeDasharray="3 3" stroke="#d9e3c0" />
-                  <XAxis dataKey="skill" stroke="#215E61" />
-                  <YAxis stroke="#215E61" />
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <XAxis 
+                    dataKey="skill" 
+                    stroke="#215E61"
+                    tick={{ fontSize: 12, fill: '#215E61' }}
+                    interval={0}
+                    angle={-30}
+                    textAnchor="end"
+                    height={70}
+                  />
+                  <YAxis 
+                    stroke="#215E61"
+                    tick={{ fontSize: 12, fill: '#215E61' }}
+                    domain={[0, 100]}
+                    ticks={[0, 25, 50, 75, 100]}
+                  />
                   <Bar dataKey="level" radius={[8, 8, 0, 0]}>
                     {skillProficiency.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
@@ -70,7 +79,7 @@ export function SkillsSection() {
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
-            </ChartContainer>
+            </div>
           </div>
         </motion.div>
 

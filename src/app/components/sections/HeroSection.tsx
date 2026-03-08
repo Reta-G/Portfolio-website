@@ -1,6 +1,7 @@
 import { Github, Linkedin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import profileImage from "@/assets/Photo.png";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -11,13 +12,6 @@ export function HeroSection() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20 bg-[#F5FBE6] relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#FE7F2D] rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-[#215E61] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-[#233D4D] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-      </div>
-
       <motion.div 
         className="max-w-5xl w-full relative z-10"
         initial={{ opacity: 0 }}
@@ -25,7 +19,7 @@ export function HeroSection() {
         transition={{ duration: 0.6 }}
       >
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          {/* Photo */}
+          {/* Photo with your local image */}
           <motion.div 
             className="shrink-0"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -33,15 +27,17 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-linear-to-br from-[#215E61] via-[#233D4D] to-[#FE7F2D] p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-[#F5FBE6] overflow-hidden">
-                <div className="w-full h-full bg-linear-to-br from-[#d9e3c0] to-[#c5d2aa] flex items-center justify-center">
-                  <span className="text-[#233D4D] text-sm">Photo</span>
-                </div>
+              <div className="w-full h-full rounded-full bg-white overflow-hidden">
+                <img 
+                  src={profileImage}
+                  alt="Reta Getachew"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
 
-          {/* Hero Content */}
+          {/* Rest of your hero content... */}
           <div className="flex-1 text-center md:text-left">
             <motion.h1 
               className="mb-4"
@@ -81,7 +77,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <motion.a
-                href="https://github.com/yourusername"
+                href="https://github.com/Reta-G"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[#F5FBE6] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
@@ -95,7 +91,7 @@ export function HeroSection() {
               </motion.a>
               
               <motion.a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/vetra-g-6210143b6 "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[#F5FBE6] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
@@ -111,23 +107,6 @@ export function HeroSection() {
           </div>
         </div>
       </motion.div>
-
-      <style>{`
-        @keyframes blob {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-        }
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-      `}</style>
     </section>
   )
 }
