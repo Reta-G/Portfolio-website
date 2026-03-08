@@ -51,15 +51,19 @@ export function SkillsSection() {
           <h3 className="mb-6 text-xl font-medium text-slate-800 text-center">
             Skill Proficiency
           </h3>
-          <ChartContainer config={chartConfig} className="h-75 w-full">
-            <BarChart data={skillProficiency}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="skill" />
-              <YAxis />
-              <ChartTooltip content={<ChartTooltipContent />} />
-              <Bar dataKey="level" fill="var(--color-level)" radius={[4, 4, 0, 0]} />
-            </BarChart>
-          </ChartContainer>
+          <div className="h-[300px] w-full">
+            <ChartContainer config={chartConfig}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={skillProficiency}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="skill" />
+                  <YAxis />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Bar dataKey="level" fill="#E07A5F" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </ChartContainer>
+          </div>
         </motion.div>
 
         <div className="space-y-10">
