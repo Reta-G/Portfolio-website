@@ -10,12 +10,12 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20 bg-linear-to-br from-white via-indigo-50/30 to-rose-50/30 relative overflow-hidden">
-      {/* Animated background circles */}
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20 bg-[#F5FBE6] relative overflow-hidden">
+      {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#FE7F2D] rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-[#215E61] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-[#233D4D] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
       </div>
 
       <motion.div 
@@ -32,10 +32,10 @@ export function HeroSection() {
             animate={{ opacity: isLoaded ? 1 : 0, scale: isLoaded ? 1 : 0.5 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-linear-to-br from-indigo-500 via-purple-500 to-rose-500 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-white overflow-hidden">
-                <div className="w-full h-full bg-linear-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Photo</span>
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-linear-to-br from-[#215E61] via-[#233D4D] to-[#FE7F2D] p-1 shadow-2xl">
+              <div className="w-full h-full rounded-full bg-[#F5FBE6] overflow-hidden">
+                <div className="w-full h-full bg-linear-to-br from-[#d9e3c0] to-[#c5d2aa] flex items-center justify-center">
+                  <span className="text-[#233D4D] text-sm">Photo</span>
                 </div>
               </div>
             </div>
@@ -49,24 +49,24 @@ export function HeroSection() {
               animate={{ opacity: isLoaded ? 1 : 0, x: isLoaded ? 0 : -20 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <span className="text-5xl md:text-7xl font-bold bg-linear-to-r from-indigo-900 via-purple-800 to-rose-700 bg-clip-text text-transparent">
+              <span className="text-5xl md:text-7xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
                 Reta Getachew
               </span>
             </motion.h1>
             
             <motion.p 
-              className="mb-4 text-2xl md:text-3xl font-light text-gray-600"
+              className="mb-4 text-2xl md:text-3xl font-light text-[#215E61]"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: isLoaded ? 1 : 0, x: isLoaded ? 0 : -20 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               Computer Science Graduate.
               <br />
-              <span className="text-rose-600 font-medium">Curious Problem Solver.</span>
+              <span className="text-[#FE7F2D] font-medium">Curious Problem Solver.</span>
             </motion.p>
             
             <motion.p 
-              className="mb-8 text-lg leading-relaxed max-w-2xl mx-auto md:mx-0 text-gray-600"
+              className="mb-8 text-lg leading-relaxed max-w-2xl mx-auto md:mx-0 text-[#233D4D]"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: isLoaded ? 1 : 0, x: isLoaded ? 0 : -20 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -84,12 +84,12 @@ export function HeroSection() {
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
+                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[#F5FBE6] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="absolute inset-0 bg-linear-to-r from-gray-800 to-gray-900"></span>
-                <span className="absolute inset-0 bg-linear-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute inset-0 bg-[#233D4D]"></span>
+                <span className="absolute inset-0 bg-[#215E61] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <Github className="w-5 h-5 relative z-10" />
                 <span className="relative z-10">GitHub</span>
               </motion.a>
@@ -98,12 +98,12 @@ export function HeroSection() {
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
+                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[#F5FBE6] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="absolute inset-0 bg-linear-to-r from-rose-600 to-amber-600"></span>
-                <span className="absolute inset-0 bg-linear-to-r from-indigo-600 to-rose-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute inset-0 bg-[#FE7F2D]"></span>
+                <span className="absolute inset-0 bg-[#215E61] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <Linkedin className="w-5 h-5 relative z-10" />
                 <span className="relative z-10">LinkedIn</span>
               </motion.a>

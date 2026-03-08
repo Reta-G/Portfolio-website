@@ -25,7 +25,7 @@ export function FutureSection() {
   ]
 
   return (
-    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-emerald-50/30">
+    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-[#F5FBE6] to-white">
       <motion.div 
         className="max-w-4xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -33,7 +33,7 @@ export function FutureSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="mb-12 text-center">
-          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-indigo-900 via-purple-800 to-rose-700 bg-clip-text text-transparent">
+          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
             Where I'm Headed
           </span>
         </h2>
@@ -49,13 +49,13 @@ export function FutureSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="w-20 h-20 rounded-2xl bg-linear-to-br from-rose-50 to-amber-50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-xl">
-                  <Icon className="w-10 h-10 text-rose-500" />
+                <div className="w-20 h-20 rounded-2xl bg-linear-to-br from-[#F5FBE6] to-[#e5f0d1] flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-xl">
+                  <Icon className="w-10 h-10 text-[#FE7F2D]" />
                 </div>
-                <h3 className="mb-2 text-lg font-bold text-gray-900">
+                <h3 className="mb-2 text-lg font-bold text-[#233D4D]">
                   {card.title}
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-[#215E61]">
                   {card.description}
                 </p>
               </motion.div>
@@ -64,12 +64,12 @@ export function FutureSection() {
         </div>
         
         <motion.div 
-          className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300"
+          className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-[#d9e3c0] hover:shadow-2xl transition-shadow duration-300"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p className="text-center text-lg leading-relaxed text-gray-700">
+          <p className="text-center text-lg leading-relaxed text-[#233D4D]">
             I'm looking for a team that values thoughtful engineering, continuous learning, and building 
             products that matter. I want to work alongside people who care about craft, ask good questions, 
             and believe that technology can be a force for good. If you're building something meaningful 

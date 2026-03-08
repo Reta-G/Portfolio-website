@@ -7,7 +7,7 @@ export function VideoSection() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white via-indigo-50/30 to-rose-50/30">
+    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-[#F5FBE6] via-white to-[#F5FBE6]">
       <motion.div 
         className="max-w-4xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -15,17 +15,17 @@ export function VideoSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="text-center mb-4">
-          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-indigo-900 via-purple-800 to-rose-700 bg-clip-text text-transparent">
+          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
             Hello, I'm Reta — In My Own Words
           </span>
         </h2>
         
-        <p className="text-center mb-12 text-lg text-gray-600 font-light">
+        <p className="text-center mb-12 text-lg text-[#215E61] font-light">
           A personal introduction to who I am and what drives me
         </p>
 
         <motion.div 
-          className="relative aspect-video bg-linear-to-br from-indigo-600 via-purple-600 to-rose-600 rounded-2xl shadow-2xl overflow-hidden group cursor-pointer"
+          className="relative aspect-video bg-linear-to-br from-[#215E61] via-[#233D4D] to-[#FE7F2D] rounded-2xl shadow-2xl overflow-hidden group cursor-pointer"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >
@@ -33,12 +33,12 @@ export function VideoSection() {
           
           <div className="absolute inset-0 flex items-center justify-center">
             <motion.div 
-              className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300"
+              className="w-20 h-20 bg-[#F5FBE6]/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300"
               animate={{
                 scale: [1, 1.1, 1],
                 boxShadow: [
                   "0 20px 40px -10px rgba(0,0,0,0.3)",
-                  "0 30px 60px -10px rgba(225,29,72,0.4)",
+                  "0 30px 60px -10px rgba(254,127,45,0.4)",
                   "0 20px 40px -10px rgba(0,0,0,0.3)"
                 ]
               }}
@@ -48,16 +48,16 @@ export function VideoSection() {
                 ease: "easeInOut"
               }}
             >
-              <Play className="w-8 h-8 ml-1 text-rose-600" fill="currentColor" />
+              <Play className="w-8 h-8 ml-1 text-[#FE7F2D]" fill="currentColor" />
             </motion.div>
           </div>
 
-          <div className="absolute bottom-6 left-6 text-white">
+          <div className="absolute bottom-6 left-6 text-[#F5FBE6]">
             <p className="text-sm font-light opacity-90">60-90 second introduction video</p>
           </div>
         </motion.div>
 
-        <p className="text-center mt-6 text-sm text-gray-500">
+        <p className="text-center mt-6 text-sm text-[#215E61]">
           Click to play • A brief, authentic message about my journey and goals
         </p>
       </motion.div>

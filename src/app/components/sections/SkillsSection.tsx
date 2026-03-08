@@ -23,17 +23,17 @@ export function SkillsSection() {
     { skill: 'Git', level: 95 },
   ]
 
-  const colors = ['#4f46e5', '#7c3aed', '#db2777', '#e11d48', '#f59e0b', '#10b981']
+  const colors = ['#233D4D', '#215E61', '#2d7a7e', '#FE7F2D', '#fe9856', '#e55f12']
 
   const chartConfig = {
     level: {
       label: "Proficiency",
-      color: "#4f46e5",
+      color: "#215E61",
     },
   }
 
   return (
-    <section id="skills" ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-blue-50/30">
+    <section id="skills" ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-[#F5FBE6]">
       <motion.div 
         className="max-w-5xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -41,7 +41,7 @@ export function SkillsSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="mb-12 text-center">
-          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-indigo-900 via-purple-800 to-rose-700 bg-clip-text text-transparent">
+          <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
             What I Work With
           </span>
         </h2>
@@ -52,16 +52,16 @@ export function SkillsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3 className="mb-6 text-xl font-bold text-center text-gray-800">
+          <h3 className="mb-6 text-xl font-bold text-center text-[#233D4D]">
             Skill Proficiency
           </h3>
           <div className="h-75 w-full">
             <ChartContainer config={chartConfig}>
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={skillProficiency}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                  <XAxis dataKey="skill" stroke="#64748b" />
-                  <YAxis stroke="#64748b" />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#d9e3c0" />
+                  <XAxis dataKey="skill" stroke="#215E61" />
+                  <YAxis stroke="#215E61" />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Bar dataKey="level" radius={[8, 8, 0, 0]}>
                     {skillProficiency.map((entry, index) => (
@@ -82,14 +82,14 @@ export function SkillsSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
             >
-              <h3 className="mb-4 text-base font-bold tracking-wider uppercase text-transparent bg-linear-to-r from-indigo-600 to-rose-600 bg-clip-text">
+              <h3 className="mb-4 text-base font-bold tracking-wider uppercase text-transparent bg-linear-to-r from-[#215E61] to-[#FE7F2D] bg-clip-text">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-white rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 text-base text-gray-700 border border-gray-100 hover:border-rose-200 hover:bg-linear-to-r hover:from-rose-50 hover:to-amber-50"
+                    className="px-4 py-2 bg-white rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 text-base text-[#233D4D] border border-[#d9e3c0] hover:border-[#FE7F2D] hover:bg-linear-to-r hover:from-[#F5FBE6] hover:to-white"
                   >
                     {skill}
                   </span>

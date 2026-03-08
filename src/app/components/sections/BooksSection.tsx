@@ -35,7 +35,7 @@ export function BooksSection() {
   ]
 
   return (
-    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-amber-50/30">
+    <section ref={ref} className="py-24 px-6 lg:px-8 bg-linear-to-br from-white to-[#F5FBE6]">
       <motion.div 
         className="max-w-5xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -43,15 +43,15 @@ export function BooksSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <div className="flex items-center justify-center gap-3 mb-4">
-          <BookOpen className="w-8 h-8 text-rose-500" />
+          <BookOpen className="w-8 h-8 text-[#FE7F2D]" />
           <h2 className="text-center">
-            <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-indigo-900 via-purple-800 to-rose-700 bg-clip-text text-transparent">
+            <span className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#233D4D] via-[#215E61] to-[#FE7F2D] bg-clip-text text-transparent">
               Books That Shaped My Thinking
             </span>
           </h2>
         </div>
         
-        <p className="text-center mb-12 max-w-2xl mx-auto text-lg text-gray-600 font-light">
+        <p className="text-center mb-12 max-w-2xl mx-auto text-lg text-[#215E61] font-light">
           Reading beyond code has been essential to my growth—these books changed how I approach problems and people.
         </p>
         
@@ -59,7 +59,7 @@ export function BooksSection() {
           {books.map((book, index) => (
             <motion.div
               key={book.title}
-              className="flex gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 hover:border-rose-200 group"
+              className="flex gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-[#d9e3c0] hover:border-[#FE7F2D] group"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -68,18 +68,18 @@ export function BooksSection() {
                 <ImageWithFallback
                   src={book.imageUrl}
                   alt={`${book.title} book cover`}
-                  className="w-24 h-32 object-cover rounded-xl shadow-lg group-hover:shadow-rose-200/50 transition-shadow duration-300"
+                  className="w-24 h-32 object-cover rounded-xl shadow-lg group-hover:shadow-[#FE7F2D]/20 transition-shadow duration-300"
                 />
               </div>
               
               <div className="flex-1">
-                <h3 className="mb-1 text-lg font-bold text-gray-900">
+                <h3 className="mb-1 text-lg font-bold text-[#233D4D]">
                   {book.title}
                 </h3>
-                <p className="mb-3 text-sm text-rose-600 font-medium">
+                <p className="mb-3 text-sm text-[#FE7F2D] font-medium">
                   by {book.author}
                 </p>
-                <p className="text-sm italic text-gray-700 leading-relaxed">
+                <p className="text-sm italic text-[#215E61] leading-relaxed">
                   "{book.insight}"
                 </p>
               </div>
