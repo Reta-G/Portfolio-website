@@ -1,7 +1,7 @@
 import { BookOpen } from 'lucide-react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ImageWithFallback } from '../figma/ImageWithF'
+import { ImageWithFallback } from '../image/ImageWithF'
 
 export function BooksSection() {
   const ref = useRef(null)
